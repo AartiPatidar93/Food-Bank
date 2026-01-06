@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Bank</title>
+    <style>
+        body {
+            margin: 0;
+            line-height: 1.6;
+            background-color: white;
+            transition: 0.5s ease all;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            height: 20px;
+            width: 25px;
+        }
+
+        .site-name {
+            font-size: 25px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            font-size: 17px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        .nav-links a:hover {
+            font-size: 16px;
+            transition: 0.3s ease-in-out;
+            border-radius: 15px;
+            background-color: black;
+        }
+
+        .login-btn {
+            border-radius: 20px;
+            color: black;
+            background-color: white;
+            border: 3px solid black;
+            padding: 0.3em 1em;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .login-btn:hover {
+            font-size: 14px;
+            transition: 0.5s ease all;
+            border: 3px solid white;
+            color: white;
+            background-color: black;
+        }
+
+        .content:hover {
+            background-color: #d0fecf;
+            transition: 0.5s ease all;
+        }
+
+        .WhatWeDo-Div {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        .WhatWeDo-photo {
+            float: left;
+            height: 365px;
+            transition: .5s all ease-in-out;
+        }
+
+        .WhatWeDo-photo:hover {
+            transform: scale(0.95);
+        }
+
+        .WhatWeDo-content {
+            font-size: 14px;
+        }
+
+        .HowItWorks-Div {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        .HowItWorks-photo {
+            float: right;
+            height: 450px;
+            transition: .5s all ease-in-out;
+        }
+
+        .HowItWorks-photo:hover {
+            transform: scale(0.95);
+
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section:nth-child(even) {
+            background: #f4f4f4;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+            transition: .5s all ease-in-out;
+
+        }
+
+        .gallery img:hover {
+            transform: scale(1.2);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <img class="logo" src="Images/logo.jpg" alt="logo">
+                <span class="site-name">Food Bank</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#what-we-do">What We Do</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#donation">Donation</a></li>
+                <li><a href="#our-team">Our Team</a></li>
+                <li><a href="#volunteers">Volunteers</a></li>
+                <li><a href="#about-us">About Us</a></li>
+            </ul>
+            <a href="DonateNow.html" class="login-btn"> Donate Now </a>
+            <a href="feedback.html" class="login-btn"> Feedback </a>
+            <a href="login.html" id="loginButton1" class="login-btn"> Login </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <h2>Welcome to Food Bank</h2>
+            <h3>Join Hands to Fight Hunger: Donate to Food Bank</h3>
+            <span class="content">"Where we work to reduce hunger and food waste. By rescuing surplus
+                food and distributing it to those in need, <br> we’re creating a community where everyone has access to
+                nutritious meals. <br> Let’s make a difference—because <span style="font-weight: bold;"> No food
+                    should go to Waste, and No one should go Hungry. </span> "<br> "Join us in the fight against hunger
+                and food waste! Together, we can create a healthier, more sustainable world." <br><br>
+
+                Thank you for joining us !! This application is your
+                gateway to accessing resources, managing donations,<br>
+                and staying connected with our mission to ensure that no one goes without a meal.<br>
+
+                Whether you're here to request assistance, volunteer, or donate, we are committed to making the process
+                simple, transparent, and impactful.<br> Together, we can create a stronger, more compassionate
+                community.
+            </span>
+        </section>
+
+        <div class="WhatWeDo-Div">
+            <section id="what-we-do" class="section">
+                <h2>What We Do</h2>
+                <img class="WhatWeDo-photo" src="Images/What We Do.jpg" alt="What We Do" srcset="">
+                <span class="WhatWeDo-content">
+                    <span class="content"><span style="color:#4caf50 ;">'Food-Bank'</span> is
+                        a social platform that brings
+                        together volunteers and donors interested in donating food. Aimed at eliminating food wastage,
+                        'Food-Bank' is a unique concept started in Indore.
+                        <br><br> Our work in food donation focuses on addressing hunger and reducing food waste by
+                        redistributing surplus food to those in need. We partner with food producers, grocery stores,
+                        restaurants, and other organizations to collect excess food that is safe and nutritious but
+                        would otherwise go to waste. This food is then sorted, stored, and delivered to food banks,
+                        shelters, and community programs that serve vulnerable populations.
+                        <br><br> Through our efforts, we not only provide meals to individuals and families facing food
+                        insecurity but also promote sustainability by minimizing environmental impacts associated with
+                        food waste. By building a network of donors, volunteers, and recipients, we create a
+                        compassionate community dedicated to ending hunger and supporting healthier, more sustainable
+                        lives.
+                    </span>
+                </span>
+            </section>
+        </div>
+
+        <div class="HowItWorks-Div">
+            <section id="how-it-works" class="section">
+                <h2>How It Works</h2>
+                <img class="HowItWorks-photo" src="Images/How it Work.jpg" alt="" srcset="">
+                <span class="content">
+                    <span class="HowItWorks-content">
+                        A food donation application is a digital platform designed to connect food donors, recipients,
+                        and intermediaries such as non-profit organizations to reduce food waste and combat hunger.
+                        Here's how Our application typically works: <br><br>
+                        1. User Registration <br>
+                        2. Food Donation Process <br>
+                        3. Food Matching <br>
+                        4. Logistics Coordination <br>
+                        5. Feedback and Reporting <br>
+                        6. Additional Features <br>
+                    </span>
+                </span>
+            </section>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="gallery-Div">
+            <section id="gallery" class="section">
+                <h2>Gallery</h2>
+                <div class="gallery">
+                    <img src="Images/image1.jpg" alt="Food distribution">
+                    <img src="Images/image2.jpg" alt="Food distribution">
+                    <img src="Images/image3.jpg" alt="Food distribution">
+                    <img src="Images/image4.jpg" alt="Volunteers working">
+                    <img src="Images/image5.jpg" alt="Food distribution">
+                </div>
+            </section>
+        </div>
+
+        <div>
+            <section id="donation" class="section">
+                <h2>Donation</h2>
+                <img src="Images/Donate.jpg" alt="" srcset="">
+                <!-- <span class="content">Your support helps us feed more people.</span> -->
+            </section>
+        </div>
+
+        <!-- <div><section id="our-team" class="section"><h2>Our Team</h2><span class="content">Meet the passionate individuals driving our mission.</span></section></div>
+        <div><section id="volunteers" class="section"><h2>Volunteers</h2><span class="content">Join our team and make a difference !!</span></section></div>
+        <div><section id="about-us" class="section"><h2>About Us</h2><span class="content">Learn more about our mission and vision to end hunger.</span></section></div> -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Food Bank. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donation Feedback Form</title>
+    <style>
+        /* styles.css */
+        body {
+            background-color: black;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url('/Images/login.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(2px);
+        }
+
+        .container {
+            background-color: rgb(34, 34, 34, 0.8);
+            /* Semi-transparent background */
+            padding: 0px 30px 0px 30px;
+            border-radius: 30px;
+            width: 350px;
+            height: 650px;
+            z-index: 1;
+        }
+
+        .food-bank {
+            font-size: 50px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            color: #34f841;
+            font-size: 32px;
+        }
+
+        label {
+            display: inline;
+            margin-left: 10px;
+            font-weight: bold;
+            color: #34f841;
+        }
+
+        #userType {
+            color: #34f841;
+        }
+
+        #ratingValue {
+            font-weight: bold;
+            color: #34f841;
+            margin-left: 5px;
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 20px;
+            background-color: #1f1111;
+            color: white;
+            font-size: 16px;
+        }
+
+        input::placeholder {
+            color: #63ed68;
+        }
+
+        textarea::placeholder {
+            color: #63ed68;
+        }
+
+        input:hover,
+        textarea:hover,
+        select:hover,
+        label:hover {
+            font-size: 18px;
+            transition: 0.5s all ease-in-out;
+        }
+
+        button {
+            background-color: #34f841;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 30px;
+        }
+
+        button:hover {
+            transition: 1s;
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #responseMessage {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="form-container">
+            <h1 class="food-bank">Food Bank</h1>
+            <h1>Feedback</h1>
+            <form id="feedbackForm">
+                <!-- User Information -->
+                 
+                <select id="userType" name="userType" required>
+                    <option value="donor" selected>Donor</option>
+                    <option value="recipient">Recipient</option>
+                    <option value="volunteer">Volunteer</option>
+                </select><br><br>
+
+                <!-- Feedback Section -->
+                <label for="rating"> Rate Your Experience: </label>
+                <span id="ratingValue">3</span>
+                <input type="range" id="rating" name="rating" min="1" max="5" step="1" value="3">
+
+                <textarea id="comments" name="comments" rows="3" placeholder="Share your thoughts..."
+                    required></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+                <button type="submit"><a href="/index.html"> Home Page </a></button>
+            </form>
+            <p id="responseMessage"></p>
+        </div>
+    </div>
+</body>
+
+</html>

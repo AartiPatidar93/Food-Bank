@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Full screen background image */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #111;
+        }
+
+        /* Background image container with blur */
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url('/Images/login.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(2px);
+        }
+
+        /* Container for the login form */
+        .container {
+            background-color: rgb(34, 34, 34, 0.8);
+            /* Semi-transparent background */
+            padding: 30px;
+            border-radius: 30px;
+            width: 320px;
+            z-index: 1;
+        }
+
+        h1 {
+            text-align: center;
+            color: #34f841;
+        }
+
+        .food-bank {
+            font-size: 50px;
+            text-align: center;
+            color: white;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 20px;
+            background-color: #1f1111;
+            color: white;
+            font-size: 16px;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: 2px solid #28d833;
+        }
+
+        input[type="text"]:hover,
+        input[type="password"]:hover {
+            font-size: 20px;
+            transition: 1s;
+        }
+
+        input::placeholder {
+            color: #63ed68;
+        }
+
+        .login {
+            text-decoration: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #34f841;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        button:hover {
+            transition: 1s;
+            font-size: 25px;
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        .form-group i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-100%);
+            color: #34f841;
+        }
+
+        .signup-option {
+            text-align: center;
+            margin-top: 15px;
+            color: #34f841
+        }
+
+        .signup-option a {
+            color: #34f841;
+            text-decoration: none;
+        }
+
+        .signup-option a:hover {
+            color: #ffffff;
+            font-size: 22px;
+            transition: 0.5s;
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                width: 90%;
+                margin: 0 10px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background with blur effect -->
+    <div class="background"></div>
+    <!-- Login Form Container -->
+    <div class="container">
+        <div class="food-bank">Food Bank</div>
+        <h1>Login</h1>
+
+        <form action="LoginChecker" method="post">
+            <div class="form-group">
+                <input type="text" name="username" placeholder="Username" required>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <button type="submit"> <a class="login" href="index.html"> Login </a></button>
+        </form>
+        <div class="signup-option">
+            <p> Don't have an account ➠ <a href="signup.html">Sign Up</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
